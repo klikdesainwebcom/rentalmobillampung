@@ -1,3 +1,22 @@
+<div class="form_submit">
+  <span class="fLabel">Nama Lengkap (Your Name)</span><br />
+  <input class="f_" type="text" id="txtNama" value="" name="txtNama"/>
+<br />
+  <span class="fLabel">Nomor WA (Phone/WhatsApp Number)</span><br />
+  <input class="f_" type="text" id="txtPhone" value="" name="txtPhone"/>
+<br />
+  <span class="fLabel">Lokasi Penjemputan (Pickup Location)</span><br />
+  <input class="f_" type="text" id="txtPickUp" value="" name="txtPickUp"/>
+<br />
+  <span class="fLabel">Jam Tiba di Lokasi (Arrival Time)</span><br />
+  <input class="f_" type="text" id="txtWaktu" value="" name="txtWaktu"/>
+<br />
+  <span class="fLabel">Tujuan (Your Destination)</span><br />
+  <input class="f_" type="text" id="txtDestinasi" value="" name="txtDestinasi"/>
+<br />
+  <input class="f_" type="button" id="btn" value="Submit" onClick="javascript: window.open('https://api.whatsapp.com/send?phone=6288225226922&text=' + 'Nama%20Lengkap%20:%20' +  document.getElementById('txtNama').value + ',' + '%0D%0A' + 'Nomor%20WhatsApp%20:%20' +  document.getElementById('txtPhone').value  + ',' + '%0D%0A' + 'Lokasi%20Penjemputan%20:%20' + document.getElementById('txtPickUp').value  + ',' +  '%0D%0A' + 'Jam%20Tiba%20:%20' +  document.getElementById('txtWaktu').value  + ',' + '%0D%0A' + 'Tujuan%20Ke%20:%20' + document.getElementById('txtDestinasi').value);"/>
+<br />
+</div>
 <style>
 span.flabel{
 margin:0px;
@@ -19,22 +38,4 @@ text-align:center;
 }
 #txtNama,#txtPhone,#txtPickUp,#txtDestinasi{margin-bottom:5px;}
 </style>
-<div class="form_submit">
-  <span class="fLabel">Nama Lengkap (Your Name)</span><br />
-  <input class="f_" type="text" id="txtNama" value="" name="txtNama"/>
-<br />
-  <span class="fLabel">Nomor WA (Phone/WhatsApp Number)</span><br />
-  <input class="f_" type="text" id="txtPhone" value="" name="txtPhone"/>
-<br />
-  <span class="fLabel">Lokasi Penjemputan (Pickup Location)</span><br />
-  <input class="f_" type="text" id="txtPickUp" value="" name="txtPickUp"/>
-<br />
-  <span class="fLabel">Jam Tiba di Lokasi (Arrival Time)</span><br />
-  <input class="f_" type="text" id="txtWaktu" value="" name="txtWaktu"/>
-<br />
-  <span class="fLabel">Tujuan (Your Destination)</span><br />
-  <input class="f_" type="text" id="txtDestinasi" value="" name="txtDestinasi"/>
-<br />
-  <input class="f_" type="button" id="btn" value="Submit" onClick="javascript: window.open('https://api.whatsapp.com/send?phone=6288225226922&text=' + 'Nama%20Lengkap%20:%20' +  document.getElementById('txtNama').value + ',' + '%0D%0A' + 'Nomor%20WhatsApp%20:%20' +  document.getElementById('txtPhone').value  + ',' + '%0D%0A' + 'Lokasi%20Penjemputan%20:%20' + document.getElementById('txtPickUp').value  + ',' +  '%0D%0A' + 'Jam%20Tiba%20:%20' +  document.getElementById('txtWaktu').value  + ',' + '%0D%0A' + 'Tujuan%20Ke%20:%20' + document.getElementById('txtDestinasi').value);"/>
-<br />
-</div>
+
