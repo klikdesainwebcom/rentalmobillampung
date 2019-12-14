@@ -5,5 +5,14 @@
 <p><span class="fLabel">Lokasi Penjemputan (Pickup Location)</span><br /><input class="f_" type="text" id="txtPickUp" value="" name="txtPickUp"/></p>
 <p><span class="fLabel">Jam Tiba di Lokasi (Arrival Time)</span><br /><input class="f_" type="text" id="txtWaktu" value="" name="txtWaktu"/></p>
 <p><span class="fLabel">Tujuan (Your Destination)</span><br /><input class="f_" type="text" id="txtDestinasi" value="" name="txtDestinasi"/></p>
-<p><span class="fLabel">Pilih Model Mobil</span><br /><input class="f_" type="text" id="txtModelMobil" value="" name="txtModelMobil"/></p>
+<p><span class="fLabel">Pilih Model Mobil</span><br />
+<select name="txtModelMobil" id="txtModelMobil" class="f_">
+<option value="Avanza">Avanza</option>
+<option value="Xenia">Xenia</option>
+<option value="Sigra">Sigra</option>
+<option value="Calya">Calya</option>
+<option value="Grand_Innova">Grand_Innova</option>
+<option value="Innova_Reborn">Innova_Reborn</option>
+</select>
+</p>
 <p><input class="f_" type="button" id="btn" value="Submit" onClick="javascript: window.open('https://api.whatsapp.com/send?phone=6282286415141&text=' + 'Nama%20Lengkap%20:%20' +  document.getElementById('txtNama').value + ',' + '%0D%0A' + 'Nomor%20WhatsApp%20:%20' +  document.getElementById('txtPhone').value  + ',' + '%0D%0A' + 'Lokasi%20Penjemputan%20:%20' + document.getElementById('txtPickUp').value  + ',' +  '%0D%0A' + 'Jam%20Tiba%20:%20' +  document.getElementById('txtWaktu').value  + ',' + '%0D%0A' + 'Tujuan%20Ke%20:%20' + document.getElementById('txtDestinasi').value) + ',' + '%0D%0A' + 'Model%20Mobil%20:%20' + document.getElementById('txtModelMobil').value);"/></p></div>
